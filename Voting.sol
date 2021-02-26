@@ -79,7 +79,7 @@ contract Voting
         require ( candidates[_id].canFight == true, "This candidate is not approved yet to fight election" );   //checking if candidate can fight or not.
         candidates[_id].TotalVotes++;                                               //incrementing votes of candidate.
         votedOrNot[msg.sender]=true;                                                //marking voter as voted.
-        howMnayVoted++;                                                             //counting total votes.
+        howManyVoted++;                                                             //counting total votes.
     }
     
     function calculateResult ( ) public isOwner
